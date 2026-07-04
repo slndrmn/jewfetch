@@ -1,0 +1,1 @@
+echo "uptime": $(uptime -p)
