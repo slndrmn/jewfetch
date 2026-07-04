@@ -11,19 +11,19 @@ the name is for entertainment purposes only
 chmod +x start.sh
 ./start.sh
 ```
-- choose 1 if you want to install by building (recommended)
-- choose 2 if you want to install by pre-build binary image
-- choose 3 if you want to uninstall
+choose 1 if you want to install by building (recommended)
+choose 2 if you want to uninstall
 
 # Configuration
 
 the path that contains config files is `~/.config/jewfetch`
 
 - `config.json`
-from here, you can change the commands to be executed for the components
+you can set color, ascii art and the components to be displayed and their order from here
 
-- `options.json`
-from here, you can change the ascii art and the colors
+commands are stored in `~/.config/jewfetch/commands`
+you can create new command to create new component here
+after you create new command add new object to the components section in `~/.config/jewfetch/config.json`
 
 ascii arts are stored in `~/.config/jewfetch/ascii-arts`
 if you want to create a custom ascii art, create new file here for example: `art.txt`
@@ -36,3 +36,4 @@ default color is blue.
 # Disclaimer
 
 this project was created solely for entertainment purposes, and there is no racism involved.
+
