@@ -89,7 +89,7 @@ fn main() {
         "purple" => "\x1b[1;95m",
         "cyan" => "\x1b[1;96m",
         "white" => "\x1b[1;97m",
-        _ => panic!("unknown color: {}",config.color),
+        _ => panic!("error while finding color (maybe config file doesnt exist??)"),
     };
 
     let mut max_line = 0;
@@ -119,4 +119,3 @@ fn main() {
     }
     println!();
 }
-
