@@ -2,13 +2,13 @@
   "color":"blue",
   "ascii":"default",
   "components":[
-    "host",
-    "os",
-    "kernel",
-    "uptime",
-    "de",
-    "shell",
-    "shacharit",
-    "mem"
+    "host.sh",
+    "os.sh",
+    "kernel.sh",
+    "uptime.sh",
+    "de.sh",
+    "shell.sh",
+    "shacharit.py",
+    "mem.sh"
   ]
 }

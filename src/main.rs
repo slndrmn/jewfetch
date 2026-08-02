@@ -56,13 +56,17 @@ fn get_components() -> Vec<(String,String)>{
     let mut parsed_components: Vec<(String,String)> = Vec::new();
 
     for component in config.components.iter() {
-        let script_file = get_config_dir().join("commands").join(format!("{}.sh",component));
-        let text = if let Some(pth) = script_file.to_str() {
-            sh(&format!("bash {}",pth).to_string())
+        let script_file = get_config_dir().join("commands").join(format!("{}",component));
+
+        let command = if component.ends_with(".sh") {
+            format!("bash {}", script_file.to_str().unwrap())
+        } else if component.ends_with(".py") {
+            format!("python {}", script_file.to_str().unwrap())
         } else {
-            format!("error:error").to_string()
+            format!("./{}", script_file.to_str().unwrap())
         };
 
+        let text = sh(&command);
         let sliced_text: Vec<&str> = text.split(':').collect();
 
         if sliced_text.len() == 1 {

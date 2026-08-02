@@ -1,1 +1,1 @@
-echo "shell:" $(zsh --version | cut -d' ' -f1,2)
+echo "shell: $SHELL"
