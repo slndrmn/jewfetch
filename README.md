@@ -1,39 +1,42 @@
-# Jewfetch
+# JewFetch
 
-jewfetch is a fetching tool written in rust
-the name is for entertainment purposes only
+A fetching tool written in Rust. The name is for entertainment purposes only.
 
 ![jewfetch](pics/default.png)
 
-# Installation / Uninstallation
+## Installation
 
-```bash
+```sh
 chmod +x start.sh
 ./start.sh
 ```
-choose 1 if you want to install by building (recommended)
-choose 2 if you want to uninstall
 
-# Configuration
+- Choose `1` to install by building (recommended).
+- Choose `2` to uninstall.
 
-the path that contains config files is `~/.config/jewfetch`
+## Configuration
 
-- `config.json`
-you can set color, ascii art and the components to be displayed and their order from here
+Config files stores in `~/.config/jewfetch`.
 
-commands are stored in `~/.config/jewfetch/commands`
-you can create new command to create new component here
-after you create new command add new object to the components section in `~/.config/jewfetch/config.json`
+### `config.json`
 
-ascii arts are stored in `~/.config/jewfetch/ascii-arts`
-if you want to create a custom ascii art, create new file here for example: `art.txt`
-then set the ascii section into the name of your file that you created previously for example: `"ascii":"art"`
+Set color, ASCII art, and the components to display (and their order).
 
-you can also select the color whatever you want from the section color
-available colors: `black,red,green,yellow,blue,purple,cyan,white`
-default color is blue.
+### Commands
 
-# Disclaimer
+Stored in `~/.config/jewfetch/commands`.  
+Create a new command file to add a component, then add its object to `config.json`.
 
-this project was created solely for entertainment purposes, and there is no racism involved.
+### ASCII arts
 
+Stored in `~/.config/jewfetch/ascii-arts`.  
+Create a new file (e.g. `art.txt`), then set `"ascii": "art"` in `config.json`.
+
+### Colors
+
+Available: `black`, `red`, `green`, `yellow`, `blue`, `purple`, `cyan`, `white`.  
+Default: `blue`.
+
+## Disclaimer
+
+This project was created solely for entertainment purposes. No racism is intended or involved.
